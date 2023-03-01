@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            display:block;
+            
+            background-color: black;
+            padding:10px 20px;
+        }
+        
+        #scoreText{
+            padding-left: 37%;
+        }
+        #img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            width:650px;
+            
+            
+        }
+
+        #game{
+            width: 440px;
+            height: 520px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        #button{
+            width: 70px;
+            height: 30px;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            color: white;
+            background-color:rgb(5, 5, 203);
+        }
+        #pause{
+            width: 70px;
+            height: 30px;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            color: white;
+            background-color:rgb(5, 5, 203);
+        }
+        #restart{
+            width: 70px;
+            height: 30px;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            color: white;
+            background-color:rgb(5, 5, 203);
+        }
+        #b{
+            padding-top: 20px;
+        }
+        #info{
+            color: white;
+            background-color:rgb(5, 5, 203);
+            width: 700px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: 3px solid rgb(5, 5, 203);
+            border-radius: 10px;
+        }
+        .text{
+            text-align: center;
+            font-size: 18px;
+        }
+        .heading{
+            text-align:center;
+        }
+        #sub{
+            color:white;
+            font-size: 24px;
+            text-align:center;
+         }
+    </style>
+    <div id='name'>
+        <img id= 'img' src = './img/logo.png'>
+        <h5 id="sub"> - With a South African twist...</h5>
+    </div>
+    <div id='scoreText'>
+    <p style="color: white; font-family: sans-serif; font-size:18px; margin-bottom: 6px;">
+        <span>Score: </span><span id="scoreEl">0</span>
+    </p>
+</div>
+<div id = 'game'>
+    <canvas id='map'></canvas>
+</div>
+<div id="b">
+<button id="restart" onclick = "restartGame()">Start</button>
+
+<button id="pause" onclick = "pauseGame()">Pause</button>
+<button id="button" onclick = "startGame()">Resume</button>
+
+</div>
+<div id="info">
+    <h1 class="heading">ABOUT</h1>
+    <p class="text">Welcome to PACMAN with a South African twist, this is a PACMAN game I coded using Javascript<br><br>
+    What is the South African twist you may ask, well in this PACMAN game the objective is to collect
+     electricity bolts, since PACMAN is currently experiencing the dreaded LOADSHEDDING.<br><br>
+    The objective is to avoid the ghosts because when it is dark the ghosts can kill you.<br>
+    However, if you can reach the solar panel power up you will have a few seconds of power,<br>
+     once the power is on, the ghosts become scared and PACMAN will be able to catch them, 
+     be careful though because as soon as the lights go off the ghosts will not be scared anymore.<br><br>
+    Collect all the electricity bolts to win the game.<br> Have fun playing<br><br>
+    -Reinhardt Burger</p>
+</div>
+<div id="info">
+    <h1 class="heading">Controls</h1>
+    <p class="text" style="font-size: 20px">Movement<br><br>
+    - Use W key to move up<br>
+    - Use A key to move left<br>
+    - Use S key to move down<br>
+    - Use D key to move right<br><br>
+    Buttons<br><br>
+    The start button begins a new game<br>
+    The pause button pauses the game<br>
+    The resume button resumes the game</p>
+</div>
+</div>
+<div id="info">
+    <h1 class="heading">Additional Information</h1>
+    <p class="text" style="font-size: 20px">The code for this game can be found here on my github account, the code is all open<br>
+     source, you are welcome to download the code and create your own level designs or unique twist.<br><br>
+    Thank you for playing my PACMAN game and I hope you enjoyed it.<br><br>
+    Contact information<br>
+    Gmail - reinhardtburger0@gmail.com<br>
+    linkedIn - </p>
+</div>
+    <script src="index.js"></script>  
+</body>
+</html>
